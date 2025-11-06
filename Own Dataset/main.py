@@ -18,21 +18,12 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 def create_directories():
-    """Create necessary directories"""
     dirs = ['plots', 'models', 'results']
     for d in dirs:
         os.makedirs(d, exist_ok=True)
     logger.info("Created necessary directories")
 
 def run_pipeline(n_samples=10000, n_sensors=5, anomaly_ratio=0.05):
-    """
-    Run the complete anomaly detection pipeline
-    
-    Args:
-        n_samples: Number of time points to generate
-        n_sensors: Number of sensors to simulate
-        anomaly_ratio: Proportion of anomalies
-    """
     start_time = datetime.now()
     logger.info("="*80)
     logger.info("STARTING ANOMALY DETECTION PIPELINE")
@@ -43,7 +34,6 @@ def run_pipeline(n_samples=10000, n_sensors=5, anomaly_ratio=0.05):
     logger.info(f"  Anomaly Ratio: {anomaly_ratio*100:.1f}%")
     
     try:
-        # Step 1: Generate synthetic data
         logger.info("\n" + "="*80)
         logger.info("STEP 1: Generating Synthetic Data")
         logger.info("="*80)
