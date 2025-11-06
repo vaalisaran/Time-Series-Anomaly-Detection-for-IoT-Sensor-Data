@@ -1,0 +1,93 @@
+================================================================================
+ANOMALY DETECTION MODEL COMPARISON REPORT
+================================================================================
+
+Total Samples: 10000
+Total Actual Anomalies: 500 (5.00%)
+
+--------------------------------------------------------------------------------
+PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+
+ENSEMBLE
+  Precision: 0.3408
+  Recall: 0.6980
+  F1-Score: 0.4580
+  True Positives: 349
+  False Positives: 675
+  True Negatives: 8825
+  False Negatives: 151
+  Total Detected: 1024
+
+ISOLATION_FOREST
+  Precision: 0.4200
+  Recall: 0.4200
+  F1-Score: 0.4200
+  True Positives: 210
+  False Positives: 290
+  True Negatives: 9210
+  False Negatives: 290
+  Total Detected: 500
+
+LOF
+  Precision: 0.3240
+  Recall: 0.3240
+  F1-Score: 0.3240
+  True Positives: 162
+  False Positives: 338
+  True Negatives: 9162
+  False Negatives: 338
+  Total Detected: 500
+
+AUTOENCODER
+  Precision: 0.3080
+  Recall: 0.3080
+  F1-Score: 0.3080
+  True Positives: 154
+  False Positives: 346
+  True Negatives: 9154
+  False Negatives: 346
+  Total Detected: 500
+
+ELLIPTIC_ENVELOPE
+  Precision: 0.3020
+  Recall: 0.3020
+  F1-Score: 0.3020
+  True Positives: 151
+  False Positives: 349
+  True Negatives: 9151
+  False Negatives: 349
+  Total Detected: 500
+
+Z_SCORE
+  Precision: 0.1115
+  Recall: 0.8420
+  F1-Score: 0.1969
+  True Positives: 421
+  False Positives: 3356
+  True Negatives: 6144
+  False Negatives: 79
+  Total Detected: 3777
+
+LSTM_AUTOENCODER
+  Precision: 0.0620
+  Recall: 0.0620
+  F1-Score: 0.0620
+  True Positives: 31
+  False Positives: 469
+  True Negatives: 9031
+  False Negatives: 469
+  Total Detected: 500
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+Best Overall Performance: ensemble
+  F1-Score: 0.4580
+
+Highest Recall: z_score
+  Recall: 0.8420
+
+Highest Precision: isolation_forest
+  Precision: 0.4200
