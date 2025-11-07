@@ -191,7 +191,7 @@ if __name__ == "__main__":
     # Example usage
     from data_loader import NASABearingDataLoader
     
-    loader = NASABearingDataLoader("path/to/data")
+    loader = NASABearingDataLoader("nasa_bearing_dataset")
     data = loader.load_bearing_data('Bearing1_1')
     
     engineer = TimeSeriesFeatureEngineer(data)

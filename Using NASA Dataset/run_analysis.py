@@ -1,10 +1,4 @@
-"""
-File: run_analysis.py
-Purpose: Quick start script with easy configuration
 
-This script provides a simple interface to run the anomaly detection pipeline
-with different configurations.
-"""
 
 import argparse
 import sys
@@ -31,20 +25,6 @@ def main():
         description='NASA Bearing Anomaly Detection Pipeline',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-Examples:
-  # Run with default settings (sample 5000 points)
-  python run_analysis.py --data-path /path/to/data
-  
-  # Use full dataset
-  python run_analysis.py --data-path /path/to/data --full-data
-  
-  # Analyze different bearing
-  python run_analysis.py --data-path /path/to/data --bearing Bearing1_2
-  
-  # Custom sample size
-  python run_analysis.py --data-path /path/to/data --sample-size 10000
-  
-  # Save to custom directory
   python run_analysis.py --data-path /path/to/data --output-dir my_results
         """
     )

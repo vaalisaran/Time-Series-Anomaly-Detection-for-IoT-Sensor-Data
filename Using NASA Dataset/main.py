@@ -362,7 +362,7 @@ def main():
     """Main function"""
     
     # IMPORTANT: Update this path to your NASA bearing dataset location
-    DATA_PATH = "path/to/nasa/bearing/dataset"
+    DATA_PATH = "nasa_bearing_dataset"
     
     # Example structure:
     # nasa_bearing_dataset/

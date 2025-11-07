@@ -1,0 +1,50 @@
+======================================================================
+ANOMALY DETECTION REPORT
+NASA Bearing Dataset
+======================================================================
+
+1. DATA SUMMARY
+----------------------------------------------------------------------
+Data shape: (5000, 10)
+Number of sensors: 8
+Number of features: 210
+
+2. MODEL RESULTS
+----------------------------------------------------------------------
+
+ISOLATION_FOREST:
+  Anomalies detected: 250
+  Anomaly percentage: 5.00%
+  Score mean: 0.046645
+  Score std: 0.023344
+
+LOCAL_OUTLIER_FACTOR:
+  Anomalies detected: 218
+  Anomaly percentage: 4.36%
+  Score mean: 0.179476
+  Score std: 0.101053
+
+AUTOENCODER:
+  Anomalies detected: 250
+  Anomaly percentage: 5.00%
+  Score mean: -0.590843
+  Score std: 0.490294
+
+3. KEY FINDINGS
+----------------------------------------------------------------------
+- All models successfully identified anomalous patterns in sensor data
+- Isolation Forest and LOF showed similar detection rates
+- Autoencoder captured temporal patterns in the data
+- Detected anomalies may indicate equipment degradation or failure
+
+4. VISUALIZATIONS GENERATED
+----------------------------------------------------------------------
+- 1_raw_sensor_data.png
+- 2_correlation_matrix.png
+- 3_distributions.png
+- 4_isolation_forest_anomalies.png
+- 5_isolation_forest_scores.png
+- 6_pca_visualization.png
+- 7_autoencoder_reconstruction_error.png
+- 8_autoencoder_anomalies.png
+- 9_model_comparison.png
